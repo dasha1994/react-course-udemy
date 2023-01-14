@@ -1,22 +1,28 @@
-import React, { useContext } from "react";
-
-import Login from "./components/Login/Login";
-import Home from "./components/Home/Home";
-import MainHeader from "./components/MainHeader/MainHeader";
-import AuthContext from "./store/auth-context";
-import AuthContextProvider from "./store/auth-context";
+import React, { useState } from "react";
+import Cart from "./components/Cart/Cart";
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
+import CartProvider from "./store/CartProvider";
 
 function App() {
-  const ctx = useContext(AuthContext);
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
   return (
-    <React.Fragment>
-      <MainHeader />
+    <CartProvider>
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Header onShowCart={showCartHandler} />
       <main>
-        {!ctx.isLoggedIn && <Login />}
-        {/* because login, home directly use loginHandler */}
-        {ctx.isLoggedIn && <Home />}
+        <Meals />
       </main>
-    </React.Fragment>
+    </CartProvider>
   );
 }
 
