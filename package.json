@@ -1,0 +1,22 @@
+{
+  "name": "redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "redux-demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasha1994/react-course-users-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dasha1994/react-course-users-app/issues"
+  },
+  "homepage": "https://github.com/dasha1994/react-course-users-app#readme",
+  "dependencies": {
+    "redux": "^4.2.1"
+  }
+}
