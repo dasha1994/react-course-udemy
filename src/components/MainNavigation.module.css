@@ -17,7 +17,8 @@
 }
 
 .list a:hover,
-.list a.active {
+.list a.active,
+.isActive {
   color: var(--color-primary-800);
   text-decoration: underline;
 }
