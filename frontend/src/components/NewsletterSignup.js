@@ -5,7 +5,7 @@ function NewsletterSignup() {
   const fetcher = useFetcher();
   const { data, state } = fetcher;
 
-  fetcher.return(
+  return (
     <fetcher.Form method="post" className={classes.newsletter}>
       <input
         type="email"
