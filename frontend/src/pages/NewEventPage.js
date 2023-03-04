@@ -2,7 +2,7 @@ import EventForm from "../components/EventForm";
 import { json, redirect } from "react-router-dom";
 
 function NewEventPage() {
-  return <EventForm />;
+  return <EventForm method="POST" />;
 }
 
 export default NewEventPage;
@@ -26,6 +26,10 @@ export async function action({ request, params }) {
       "Content-Type": "application/json",
     },
   });
+
+  if (response.status === 422) {
+    return response;
+  }
 
   if (!response.ok) {
     throw json({ message: "could save" }, { status: 500 });
