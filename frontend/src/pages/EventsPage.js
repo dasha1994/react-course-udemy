@@ -11,22 +11,6 @@ function EventsPage() {
   }
   const events = data.events;
 
-  // useEffect(() => {
-  //   async function fetchEvents() {
-  //     setIsLoading(true);
-  //     const response = await fetch("http://localhost:8080/events");
-
-  //     if (!response.ok) {
-  //       setError("Fetching events failed.");
-  //     } else {
-  //       const resData = await response.json();
-  //       setFetchedEvents(resData.events);
-  //     }
-  //     setIsLoading(false);
-  //   }
-
-  //   fetchEvents();
-  // }, []);
   return (
     <>
       <EventsList events={events} />

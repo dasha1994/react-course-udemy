@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"Carn 2","image":"https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-09/Parade-of-the-Samba-Schools.jpg","date":"2023-03-01","description":"eeg","id":"b559e307-810c-4bed-958c-108bf765798d"},{"title":"Carn","image":"https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-09/Parade-of-the-Samba-Schools.jpg","date":"2023-03-20","description":"Des","id":"9906af8f-8bfa-4fca-89b6-711327fb5a3e"},{"title":"jkjk","image":"https://planetofhotels.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-09/Parade-of-the-Samba-Schools.jpg","date":"2023-03-08","description":"opopo","id":"a9353a37-e53e-4934-bc3d-fe4b6c649a29"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
