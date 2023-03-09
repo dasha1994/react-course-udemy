@@ -36,6 +36,24 @@ class App extends Component {
           timeout={1000}
           mountOnEnter
           unmountOnExit
+          onEnter={() => {
+            console.log("on enter");
+          }}
+          onEntering={() => {
+            console.log("on entering");
+          }}
+          onEntered={() => {
+            console.log("on entered");
+          }}
+          onExit={() => {
+            console.log("on exit");
+          }}
+          onExiting={() => {
+            console.log("on exiting");
+          }}
+          onExited={() => {
+            console.log("on exited");
+          }}
         >
           {(state) => (
             <div
@@ -50,14 +68,9 @@ class App extends Component {
             ></div>
           )}
         </Transition>
-        <Transition
-          in={this.state.modalIsOpen}
-          timeout={300}
-          mountOnEnter
-          unmountOnExit
-        >
-          {(state) => <Modal show={state} closed={this.closeModal} />}
-        </Transition>
+
+        <Modal show={this.state.modalIsOpen} closed={this.closeModal} />
+
         <Transition in={this.state.modalIsOpen}>
           <Backdrop show={this.state.modalIsOpen} />
         </Transition>
